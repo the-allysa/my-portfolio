@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Филиппова А.В.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header">
+            <div class="avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <h1>Алиса Филиппова</h1>
+            <p class="subtitle">
+                <i class="fas fa-graduation-cap"></i>
+                Студентка РГУ им. А.Н. Косыгина, ИТВТ-424
+            </p>
+            <p class="lab-title">
+                <i class="fas fa-laptop-code"></i>
+                Лабораторная работа №7: "Доменные имена и хостинг"
+            </p>
+        </header>
+
+        <!-- Обо мне -->
+        <section class="card">
+            <h2><i class="fas fa-user"></i> Обо мне</h2>
+            <p>Учусь на направлении "Информационные системы и технологии", профиль "Информационные технологии в дизайне". Интересуюсь веб-разработкой, сетевыми технологиями и дизайном интерфейсов.</p>
+            <p>Эта страница создана в рамках лабораторной работы для изучения DNS, хостинга и GitHub Pages.</p>
+        </section>
+
+        <!-- Навыки -->
+        <section class="card">
+            <h2><i class="fas fa-code"></i> Технические навыки</h2>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3><i class="fab fa-html5"></i> Frontend</h3>
+                    <ul>
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript (базовый)</li>
+                        <li>Адаптивная вёрстка</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL / Базы данных</li>
+                        <li>Основы REST API</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3><i class="fas fa-tools"></i> Инструменты</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Figma</li>
+                        <li>VS Code</li>
+                        <li>Linux / Windows</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- DNS-записи (для отчёта) -->
+        <section class="card">
+            <h2><i class="fas fa-network-wired"></i> Результаты анализа DNS</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Домен</th>
+                            <th>Тип записи</th>
+                            <th>Значение</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>google.com</td>
+                            <td>A</td>
+                            <td>142.251.1.113</td>
+                        </tr>
+                        <tr>
+                            <td>yandex.ru</td>
+                            <td>MX</td>
+                            <td>mx.yandex.ru</td>
+                        </tr>
+                        <tr>
+                            <td>www.github.com</td>
+                            <td>CNAME</td>
+                            <td>github.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Хостинг -->
+        <section class="card">
+            <h2><i class="fas fa-cloud"></i> Виды хостинга (из теории)</h2>
+            <div class="hosting">
+                <div class="hosting-type">
+                    <h3>Виртуальный</h3>
+                    <p>Несколько сайтов на одном сервере. Дешёвый, для небольших проектов.</p>
+                </div>
+                <div class="hosting-type">
+                    <h3>VPS</h3>
+                    <p>Виртуальный выделенный сервер. Свои ресурсы, больше контроля.</p>
+                </div>
+                <div class="hosting-type">
+                    <h3>Выделенный</h3>
+                    <p>Целый физический сервер. Максимальная производительность.</p>
+                </div>
+                <div class="hosting-type">
+                    <h3>Облачный</h3>
+                    <p>Масштабируемые ресурсы в облаке. Высокая надёжность.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ссылки -->
+        <section class="card links-card">
+            <h2><i class="fas fa-link"></i> Ссылки на проект</h2>
+            <div class="links">
+                <a href="https://github.com/ваш-логин/my-portfolio" target="_blank" class="btn">
+                    <i class="fab fa-github"></i> Исходный код
+                </a>
+                <a href="https://ваш-логин.github.io/my-portfolio/" target="_blank" class="btn">
+                    <i class="fas fa-globe"></i> GitHub Pages
+                </a>
+                <a href="#" class="btn" id="domain-btn">
+                    <i class="fas fa-at"></i> Мой домен (скоро)
+                </a>
+            </div>
+            <p class="note">После настройки домена здесь появится активная ссылка</p>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <p>© 2025 Филиппова Алиса | РГУ им. А.Н. Косыгина</p>
+            <p>Лабораторная работа №7 | Доменные имена и хостинг</p>
+            <p class="tech-info">
+                <i class="fas fa-info-circle"></i>
+                Страница размещена на GitHub Pages с использованием CSS Grid/Flexbox
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Заменяем логин в ссылках
+        const currentUser = 'annafilippova25'; // ЗАМЕНИ НА СВОЙ ЛОГИН!
+        document.querySelectorAll('a[href*="ваш-логин"]').forEach(link => {
+            link.href = link.href.replace('ваш-логин', currentUser);
+        });
+        
+        // Обновляем текст кнопки домена
+        document.getElementById('domain-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Домен будет подключен на шаге 10 лабораторной работы!');
+        });
+    </script>
+</body>
+</html>
