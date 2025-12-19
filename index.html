@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио | Филиппова А.В.</title>
+    <title>Портфолио | Алиса Филиппова</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -16,150 +17,135 @@
             </div>
             <h1>Алиса Филиппова</h1>
             <p class="subtitle">
+                <i class="fas fa-map-marker-alt"></i>
+                Москва, Россия
+            </p>
+            <p class="subtitle">
                 <i class="fas fa-graduation-cap"></i>
                 Студентка РГУ им. А.Н. Косыгина, ИТВТ-424
             </p>
-            <p class="lab-title">
-                <i class="fas fa-laptop-code"></i>
-                Лабораторная работа №7: "Доменные имена и хостинг"
-            </p>
+            <div class="contacts">
+                <a href="mailto:alice@example.com"><i class="fas fa-envelope"></i> alice@example.com</a>
+                <a href="https://github.com/твой-логин" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
         </header>
 
         <!-- Обо мне -->
         <section class="card">
             <h2><i class="fas fa-user"></i> Обо мне</h2>
-            <p>Учусь на направлении "Информационные системы и технологии", профиль "Информационные технологии в дизайне". Интересуюсь веб-разработкой, сетевыми технологиями и дизайном интерфейсов.</p>
-            <p>Эта страница создана в рамках лабораторной работы для изучения DNS, хостинга и GitHub Pages.</p>
+            <p>Привет! Я студентка направления <strong>«Информационные системы и технологии»</strong>, профиль <strong>«Информационные технологии в дизайне»</strong>.</p>
+            <p>Увлекаюсь веб-разработкой, дизайном интерфейсов и современными технологиями. Люблю создавать удобные и красивые digital-продукты.</p>
+            <p>В свободное время изучаю английский, фотографирую и путешествую.</p>
+        </section>
+
+        <!-- Образование -->
+        <section class="card">
+            <h2><i class="fas fa-university"></i> Образование</h2>
+            <div class="education-item">
+                <h3>Российский государственный университет им. А.Н. Косыгина</h3>
+                <p class="date">2023 – настоящее время</p>
+                <p>Направление: 09.03.02 Информационные системы и технологии</p>
+                <p>Профиль: Информационные технологии в дизайне</p>
+                <p>Группа: ИТВТ-424</p>
+            </div>
         </section>
 
         <!-- Навыки -->
         <section class="card">
-            <h2><i class="fas fa-code"></i> Технические навыки</h2>
+            <h2><i class="fas fa-code"></i> Навыки</h2>
             <div class="skills">
-                <div class="skill-item">
-                    <h3><i class="fab fa-html5"></i> Frontend</h3>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Технические</h3>
                     <ul>
-                        <li>HTML5 / CSS3</li>
-                        <li>JavaScript (базовый)</li>
-                        <li>Адаптивная вёрстка</li>
+                        <li><span class="skill-name">HTML5 / CSS3</span> <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div></li>
+                        <li><span class="skill-name">JavaScript</span> <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div></li>
+                        <li><span class="skill-name">Python</span> <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div></li>
+                        <li><span class="skill-name">Git & GitHub</span> <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div></li>
+                        <li><span class="skill-name">Figma</span> <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></li>
                     </ul>
                 </div>
-                <div class="skill-item">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Языки</h3>
                     <ul>
-                        <li>Python</li>
-                        <li>SQL / Базы данных</li>
-                        <li>Основы REST API</li>
+                        <li><span class="skill-name">Русский</span> <div class="skill-bar"><div class="skill-level" style="width: 100%"></div></div></li>
+                        <li><span class="skill-name">Английский</span> <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div></li>
+                        <li><span class="skill-name">Немецкий</span> <div class="skill-bar"><div class="skill-level" style="width: 40%"></div></div></li>
                     </ul>
                 </div>
-                <div class="skill-item">
-                    <h3><i class="fas fa-tools"></i> Инструменты</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>Figma</li>
-                        <li>VS Code</li>
-                        <li>Linux / Windows</li>
+                <div class="skill-category">
+                    <h3><i class="fas fa-heart"></i> Личные качества</h3>
+                    <ul class="soft-skills">
+                        <li>Ответственность</li>
+                        <li>Креативность</li>
+                        <li>Умение работать в команде</li>
+                        <li>Адаптивность</li>
+                        <li>Внимание к деталям</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- DNS-записи (для отчёта) -->
+        <!-- Проекты -->
         <section class="card">
-            <h2><i class="fas fa-network-wired"></i> Результаты анализа DNS</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Домен</th>
-                            <th>Тип записи</th>
-                            <th>Значение</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>google.com</td>
-                            <td>A</td>
-                            <td>142.251.1.113</td>
-                        </tr>
-                        <tr>
-                            <td>yandex.ru</td>
-                            <td>MX</td>
-                            <td>mx.yandex.ru</td>
-                        </tr>
-                        <tr>
-                            <td>www.github.com</td>
-                            <td>CNAME</td>
-                            <td>github.com</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Хостинг -->
-        <section class="card">
-            <h2><i class="fas fa-cloud"></i> Виды хостинга (из теории)</h2>
-            <div class="hosting">
-                <div class="hosting-type">
-                    <h3>Виртуальный</h3>
-                    <p>Несколько сайтов на одном сервере. Дешёвый, для небольших проектов.</p>
+            <h2><i class="fas fa-project-diagram"></i> Проекты</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Веб-портфолио</h3>
+                    <p>Личный сайт-портфолио на HTML/CSS с адаптивным дизайном</p>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">GitHub Pages</span>
                 </div>
-                <div class="hosting-type">
-                    <h3>VPS</h3>
-                    <p>Виртуальный выделенный сервер. Свои ресурсы, больше контроля.</p>
+                <div class="project">
+                    <h3>Лабораторные работы</h3>
+                    <p>Серия учебных проектов по веб-технологиям и сетевым системам</p>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">DNS</span>
                 </div>
-                <div class="hosting-type">
-                    <h3>Выделенный</h3>
-                    <p>Целый физический сервер. Максимальная производительность.</p>
-                </div>
-                <div class="hosting-type">
-                    <h3>Облачный</h3>
-                    <p>Масштабируемые ресурсы в облаке. Высокая надёжность.</p>
+                <div class="project">
+                    <h3>Дизайн интерфейсов</h3>
+                    <p>Прототипы мобильных приложений и веб-сайтов в Figma</p>
+                    <span class="tag">Figma</span>
+                    <span class="tag">UI/UX</span>
+                    <span class="tag">Прототипирование</span>
                 </div>
             </div>
         </section>
 
-        <!-- Ссылки -->
-        <section class="card links-card">
-            <h2><i class="fas fa-link"></i> Ссылки на проект</h2>
-            <div class="links">
-                <a href="https://github.com/ваш-логин/my-portfolio" target="_blank" class="btn">
+        <!-- Лабораторная -->
+        <section class="card lab-info">
+            <h2><i class="fas fa-flask"></i> Лабораторная работа №7</h2>
+            <p>Этот сайт создан в рамках лабораторной работы <strong>«Доменные имена и хостинг»</strong>.</p>
+            <p><strong>Тема:</strong> Изучение DNS, хостинга и публикация сайта через GitHub Pages.</p>
+            <div class="lab-links">
+                <a href="https://github.com/твой-логин/my-portfolio" target="_blank" class="lab-btn">
                     <i class="fab fa-github"></i> Исходный код
                 </a>
-                <a href="https://ваш-логин.github.io/my-portfolio/" target="_blank" class="btn">
-                    <i class="fas fa-globe"></i> GitHub Pages
-                </a>
-                <a href="#" class="btn" id="domain-btn">
-                    <i class="fas fa-at"></i> Мой домен (скоро)
+                <a href="https://твой-логин.github.io/my-portfolio/" target="_blank" class="lab-btn">
+                    <i class="fas fa-external-link-alt"></i> GitHub Pages
                 </a>
             </div>
-            <p class="note">После настройки домена здесь появится активная ссылка</p>
         </section>
 
         <!-- Футер -->
         <footer class="footer">
-            <p>© 2025 Филиппова Алиса | РГУ им. А.Н. Косыгина</p>
-            <p>Лабораторная работа №7 | Доменные имена и хостинг</p>
-            <p class="tech-info">
-                <i class="fas fa-info-circle"></i>
-                Страница размещена на GitHub Pages с использованием CSS Grid/Flexbox
-            </p>
+            <p>© 2025 Алиса Филиппова | Портфолио</p>
+            <p>Создано с <i class="fas fa-heart" style="color: #e74c3c;"></i> для лабораторной работы №7</p>
+            <p class="footer-note">Обновлено: Декабрь 2025</p>
         </footer>
     </div>
 
     <script>
         // Заменяем логин в ссылках
-        const currentUser = 'annafilippova25'; // ЗАМЕНИ НА СВОЙ ЛОГИН!
-        document.querySelectorAll('a[href*="ваш-логин"]').forEach(link => {
-            link.href = link.href.replace('ваш-логин', currentUser);
+        const currentUser = 'the-allysa'; 
+        
+        document.querySelectorAll('a[href*="твой-логин"]').forEach(link => {
+            link.href = link.href.replace('твой-логин', currentUser);
         });
         
-        // Обновляем текст кнопки домена
-        document.getElementById('domain-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Домен будет подключен на шаге 10 лабораторной работы!');
-        });
+        // Динамическое обновление года в футере
+        document.querySelector('footer p').innerHTML = `© ${new Date().getFullYear()} Алиса Филиппова | Портфолио`;
     </script>
 </body>
 </html>
